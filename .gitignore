@@ -1,2 +1,21 @@
 # Ignore local model weights
 model_crime_ucf.pth
+
+# Ignore virtual environment
+terra/
+
+# Ignore common virtual environment names
+venv/
+env/
+.venv/
+.env/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
