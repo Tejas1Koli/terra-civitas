@@ -1,5 +1,6 @@
 # Ignore local model weights
 model_crime_ucf.pth
+recordings
 
 # Ignore virtual environment
 terra/
