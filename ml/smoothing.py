@@ -1,9 +1,11 @@
+
 from collections import deque
 from typing import List, Dict
 import numpy as np
 
 class EMA:
-    def __init__(self, alpha: float = 0.5, num_classes: int = 13):
+    """Exponential Moving Average for smoothing predictions"""
+    def __init__(self, alpha: float = 0.5, num_classes: int = 14):
         self.alpha = alpha
         self.ema = np.zeros(num_classes)
         self.initialized = False
@@ -18,6 +20,7 @@ class EMA:
         return self.ema.tolist()
 
 class MajorityVote:
+    """Majority voting for smoothing predictions over time"""
     def __init__(self, window_size: int = 5):
         self.window_size = window_size
         self.queue = deque(maxlen=window_size)

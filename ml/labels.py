@@ -1,6 +1,9 @@
-# List of class labels for UCF-Crime or your model
+
+# Local crime detection labels
 LABELS = [
-    "Abuse", "Arrest", "Arson", "Assault", "Burglary", "Explosion", "Fighting", "Normal", "RoadAccidents", "Robbery", "Shooting", "Shoplifting", "Stealing", "Vandalism"
+    "Abuse", "Arrest", "Arson", "Assault", "Burglary", 
+    "Explosion", "Fighting", "Normal", "RoadAccidents", 
+    "Robbery", "Shooting", "Shoplifting", "Stealing", "Vandalism"
 ]
 
 LABEL2ID = {label: i for i, label in enumerate(LABELS)}

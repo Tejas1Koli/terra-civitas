@@ -12,3 +12,4 @@ alembic
 psycopg[binary]
 structlog
 python-multipart
+werkzeug>=3.0
