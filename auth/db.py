@@ -240,7 +240,7 @@ if __name__ == "__main__":
         
         # Create test users
         print("\n2️⃣  Creating test users...")
-        admin_user = create_user(db, "admin_user", "admin_password_123", role="admin")
+        admin_user = create_user(db, "tejas", "admin_password_123", role="admin")
         print(f"   ✓ Admin user created: {admin_user}")
         
         regular_user = create_user(db, "regular_user", "user_password_456", role="user")
